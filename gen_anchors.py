@@ -44,7 +44,7 @@ def print_anchors(centroids):
     r = "anchors: ["
     for i in sorted_indices:
         out_string += str(int(anchors[i,0]*416)) + ',' + str(int(anchors[i,1]*416)) + ', '
-            
+
     print(out_string[:-2])
 
 def run_kmeans(ann_dims, anchor_num):

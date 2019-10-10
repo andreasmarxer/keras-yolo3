@@ -1,0 +1,22 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+keras = "==2.2.4"
+numpy = "*"
+pandas = "*"
+tables = "*"
+tensorflow-gpu = "==1.7"
+sklearn = "*"
+opencv-python = "*"
+pillow = "*"
+matplotlib = "*"
+requests = "*"
+tqdm = "*"
+
+[requires]
+python_gpu = "==3.6.4"

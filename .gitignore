@@ -2,3 +2,5 @@
 *.jpeg
 *.weights
 *.h5
+lsf.*
+events.*

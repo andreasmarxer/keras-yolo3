@@ -12,16 +12,16 @@
     },
 
     "train": {
-        "train_image_folder":   "/cluster/home/marxera/sem-projekt/data/WindowWOAnnotations/validation/images/",
-        "train_annot_folder":   "/cluster/home/marxera/sem-projekt/data/WindowWOAnnotations/validation/annotations/",
+        "train_image_folder":   "/cluster/home/marxera/sem-projekt/data/Window1000/train/images/",
+        "train_annot_folder":   "/cluster/home/marxera/sem-projekt/data/Window1000/train/annotations/",
 	      "cache_name":	          "window_train.pkl",
 
-        "train_times":          5,
-	      "pretrained_weights":	 "window1000_train_bs4.h5",
+        "train_times":          1,
+	      "pretrained_weights":	 "backend.h5",
         "batch_size":           4,
         "learning_rate":        1e-4,
-        "nb_epochs":            100,
-        "warmup_epochs":        5,
+        "nb_epochs":            1,
+        "warmup_epochs":        1,
         "ignore_thresh":        0.5,
         "gpus":                 "0",
 
@@ -32,13 +32,13 @@
         "class_scale":          1,
 
         "tensorboard_dir":      "log",
-	       "saved_weights_name":  "window1000_validation_verified.h5",
+	       "saved_weights_name":  "window1000_test.h5",
         "debug":                false
     },
 
     "valid": {
-        "valid_image_folder":   "",
-        "valid_annot_folder":   "",
+        "valid_image_folder":   "/cluster/home/marxera/sem-projekt/data/Window1000/validation/images/",
+        "valid_annot_folder":   "/cluster/home/marxera/sem-projekt/data/Window1000/validation/annotations/",
 	       "cache_name":           "window_validation.pkl",
 
         "valid_times":          1
